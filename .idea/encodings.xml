@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../piGPIO" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-imu-devices" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-imu-sampleapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-imu-visualiser" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-provider-bbbiolib" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-provider-firmata" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-provider-mmap" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-provider-pi4j" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-provider-pigpio" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-provider-remote" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-provider-voodoospark" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-provider-wiringpi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-remote-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-sampleapps" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/diozero-ws281x-java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../piGPIO/distribution" charset="UTF-8" />
+  </component>
+</project>

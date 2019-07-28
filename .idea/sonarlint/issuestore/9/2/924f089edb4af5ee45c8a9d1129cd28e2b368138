@@ -1,0 +1,7 @@
+
+Ssquid:S1191"5Use classes from the Java API instead of Sun classes.(š·İÙ8åøºıÁ-
+dsquid:UselessImportCheck"4Remove this unused import 'com.diozero.devices.LED'.(ç½Àøÿÿÿÿ8»†ÀıÁ-
+Zsquid:UnusedPrivateMethod"".Remove this unused private "backwards" method.(¶Ãı8·éş‡Â-
+gsquid:UselessImportCheck"7Remove this unused import 'com.diozero.devices.PwmLed'.(…¹Åúşÿÿÿÿ8”¬şÁ-
+psquid:UselessImportCheck"@Remove this unused import 'com.diozero.api.DigitalOutputDevice'.(°£¸´úÿÿÿÿ8áÎï†Â-
+osquid:UselessImportCheck"DRemove this unused import 'com.sun.xml.internal.ws.api.pipe.Engine'.(š·İÙ8Áàó¢Â-

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../piGPIO/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-core/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-imu-devices/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-imu-sampleapp/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-imu-visualiser/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-provider-bbbiolib/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-provider-firmata/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-provider-mmap/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-provider-pi4j/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-provider-pigpio/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-provider-remote/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-provider-voodoospark/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-provider-wiringpi/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-remote-server/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-sampleapps/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-webapp/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/diozero-ws281x-java/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/distribution/pom.xml" />
+        <option value="$PROJECT_DIR$/../piGPIO/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

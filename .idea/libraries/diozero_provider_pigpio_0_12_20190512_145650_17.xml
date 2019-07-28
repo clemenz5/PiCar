@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="diozero-provider-pigpio-0.12-20190512.145650-17">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/diozero-distribution-0.12-SNAPSHOT/diozero-provider-pigpio-0.12-20190512.145650-17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

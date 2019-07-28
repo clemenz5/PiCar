@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="diozero" target="1.8" />
+      <module name="diozero-core" target="1.8" />
+      <module name="diozero-distribution" target="1.8" />
+      <module name="diozero-imu-devices" target="1.8" />
+      <module name="diozero-imu-sampleapp" target="1.8" />
+      <module name="diozero-imu-visualiser" target="1.8" />
+      <module name="diozero-provider-bbbiolib" target="1.8" />
+      <module name="diozero-provider-firmata" target="1.8" />
+      <module name="diozero-provider-mmap" target="1.8" />
+      <module name="diozero-provider-pi4j" target="1.8" />
+      <module name="diozero-provider-pigpio" target="1.8" />
+      <module name="diozero-provider-remote" target="1.8" />
+      <module name="diozero-provider-voodoospark" target="1.8" />
+      <module name="diozero-provider-wiringpi" target="1.8" />
+      <module name="diozero-remote-server" target="1.8" />
+      <module name="diozero-sampleapps" target="1.8" />
+      <module name="diozero-webapp" target="1.8" />
+      <module name="diozero-ws281x-java" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
