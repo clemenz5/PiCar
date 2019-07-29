@@ -1,50 +1,94 @@
-import com.diozero.api.DigitalOutputDevice;
-import com.diozero.api.PwmOutputDevice;
-import com.diozero.devices.LED;
-import com.diozero.devices.PwmLed;
+
+import utils.GPIOPinPair;
 import com.diozero.util.SleepUtil;
-import com.sun.xml.internal.ws.api.pipe.Engine;
+import engine.EngineController;
+import sensors.SoundSensor;
+import sensors.SoundSensorCallback;
 
-public class Main {
+public class Main  {
+
+
     public static void main(String[] args) {
-        try (PwmOutputDevice forwardEngine = new PwmOutputDevice(27, 50000, 0f); PwmOutputDevice backwardsEngine = new PwmOutputDevice(22, 50000, 0f); PwmOutputDevice leftEngine = new PwmOutputDevice(18, 50000, 0f); PwmOutputDevice rightEngine = new PwmOutputDevice(17, 50000, 0f)) {
-            forward(forwardEngine, backwardsEngine, 1f);
-            left(leftEngine, rightEngine);
-            SleepUtil.sleepSeconds(8);
-            forward(forwardEngine, backwardsEngine, 0f);
+        SoundSensorCallback sensorCallback = distance -> System.out.println(distance);
 
-            for (int i = 0; i < 3; i++) {
-                left(leftEngine, rightEngine);
-                SleepUtil.sleepSeconds(0.5);
-                right(leftEngine, rightEngine);
-                SleepUtil.sleepSeconds(0.5);
-            }
-
-
+        SoundSensor soundSensor = new SoundSensor(sensorCallback, 27, 17);
+        EngineController engineController = new EngineController(new GPIOPinPair(1,2), new GPIOPinPair(1,2), new GPIOPinPair(1,2), new GPIOPinPair(1,2));
+        engineController.forward(1);
+        while(true){
+            soundSensor.measure();
+            SleepUtil.sleepMillis(800);
         }
 
 
     }
 
-    private static void forward(PwmOutputDevice forwardEngine, PwmOutputDevice backwardsEngine, float velocity) {
-        forwardEngine.setValue(velocity);
-        backwardsEngine.setValue(0f);
-    }
+      /*
+      Stepper Motor
+        try (DigitalOutputDevice in1 = new DigitalOutputDevice(14); DigitalOutputDevice in2 = new DigitalOutputDevice(17); DigitalOutputDevice in3 = new DigitalOutputDevice(27); DigitalOutputDevice in4 = new DigitalOutputDevice(22)) {
+            for(int v = 0; v<5; v++){
+                for(int i = 0; i<128; i++){
 
-    private static void backwards(PwmOutputDevice forwardEngine, PwmOutputDevice backwardsEngine, float velocity) {
-        forwardEngine.setValue(0f);
-        backwardsEngine.setValue(velocity);
-    }
+                    in1.setValue(1);
+                    in2.setValue(0);
+                    in3.setValue(0);
+                    in4.setValue(0);
 
-    private static void right(PwmOutputDevice leftEngine, PwmOutputDevice rightEngine) {
-        leftEngine.setValue(0f);
-        rightEngine.setValue(1f);
-    }
+                    SleepUtil.sleepMillis(3);
 
-    private static void left(PwmOutputDevice leftEngine, PwmOutputDevice rightEngine) {
-        leftEngine.setValue(1f);
-        rightEngine.setValue(0f);
-    }
+                    in1.setValue(0);
+                    in2.setValue(1);
+                    in3.setValue(0);
+                    in4.setValue(0);
+
+                    SleepUtil.sleepMillis(3);
+
+                    in1.setValue(0);
+                    in2.setValue(0);
+                    in3.setValue(1);
+                    in4.setValue(0);
+
+                    SleepUtil.sleepMillis(3);
+
+                    in1.setValue(0);
+                    in2.setValue(0);
+                    in3.setValue(0);
+                    in4.setValue(1);
+
+                    SleepUtil.sleepMillis(3);
+                }
+
+                for(int i = 0; i<128; i++){
+                    in1.setValue(0);
+                    in2.setValue(0);
+                    in3.setValue(0);
+                    in4.setValue(1);
+
+                    SleepUtil.sleepMillis(3);
+
+                    in1.setValue(0);
+                    in2.setValue(0);
+                    in3.setValue(1);
+                    in4.setValue(0);
+
+                    SleepUtil.sleepMillis(3);
+
+                    in1.setValue(0);
+                    in2.setValue(1);
+                    in3.setValue(0);
+                    in4.setValue(0);
+
+                    SleepUtil.sleepMillis(3);
+
+                    in1.setValue(1);
+                    in2.setValue(0);
+                    in3.setValue(0);
+                    in4.setValue(0);
+
+                    SleepUtil.sleepMillis(3);
+                }
+            }
+        }
+*/
 
 
 }
