@@ -28,7 +28,7 @@ public class SoundSensor {
     }
 
     private double calcDistance(long time) {
-        return (330 / (2 * Math.pow(10.0, 7.0)) * (time));
+        return (346 / (2 * Math.pow(10.0, 7.0)) * (time));
     }
 
     public void measure() {
